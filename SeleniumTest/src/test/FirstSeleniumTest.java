@@ -1,16 +1,21 @@
 package test;
 
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirstSeleniumTest {
+public class FirstSeleniumTest {	
+	
+	@Test
+	public void test() {
+		//System.setProperty("webdriver.chrome.driver","C:\\opt\\chromedriver.exe");
 
-	public static void main(String[] args) {
-		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://github.com/KonstantinosMourikis/DevicesTest/tree/master/TestProject/src");
+		driver.get("www.github.com");
 
 	}
+	
+	
 
 }
